@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".Actividades.MainActivity">
 
     <LinearLayout
@@ -20,12 +21,16 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="ConectaMóvil"
+            android:fontFamily="@font/uber"
+            android:textColor="@color/black"
             android:textSize="40sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/uber"
+            android:textColor="@color/black"
             android:text="Comunica sin límites, en tiempo real." />
 
     </LinearLayout>
@@ -39,40 +44,49 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:orientation="horizontal" >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp" >
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                app:startIconDrawable="@drawable/baseline_email_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Correo electrónico"
-                    android:inputType="textEmailAddress" />
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:gravity="center_vertical" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal" >
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                app:startIconDrawable="@drawable/baseline_lock_24"
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Contraseña"
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -85,6 +99,8 @@
             android:elevation="0dp"
             android:stateListAnimator="@null"
             android:text="Iniciar sesión"
+            android:fontFamily="@font/uber"
+            android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:textAllCaps="false" />
 
@@ -93,6 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="¿No tienes una cuenta? Regístrate"
+            android:fontFamily="@font/uber"
             android:textColor="@color/black"
             android:alpha="0.7"
             style="@style/LinkButton"

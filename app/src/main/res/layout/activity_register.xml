@@ -20,17 +20,22 @@
             android:gravity="center"
             android:layout_marginBottom="10dp"
             android:text="Registrar Cliente"
+            android:fontFamily="@font/uber"
+            android:textColor="@color/black"
             android:textSize="40sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/uber"
+            android:textColor="@color/black"
             android:text="Por favor recuerda llenar los datos correctamente." />
 
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="75dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -39,19 +44,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/baseline_email_24"
+                android:hint="Correo electrónico"
                 android:layout_height="60dp" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInputEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Correo electrónico"
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -60,19 +68,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                android:hint="Nombre de usuario"
                 android:layout_height="60dp" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInputNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Nombre de usuario"
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -81,19 +93,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/baseline_phone_24"
+                android:hint="Teléfono"
                 android:layout_height="60dp" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInputTelefono"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Teléfono"
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -102,20 +118,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                android:hint="Contraseña"
                 app:endIconMode="password_toggle" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/txtInputPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Contraseña"
+                    android:fontFamily="@font/uber"
+                    android:textColor="@color/black"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -132,6 +152,7 @@
             android:backgroundTint="@color/black"
             android:stateListAnimator="@null"
             android:text="Registrarse"
+            android:fontFamily="@font/uber"
             android:textAllCaps="false" />
 
     </LinearLayout>

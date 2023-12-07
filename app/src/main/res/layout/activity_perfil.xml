@@ -13,23 +13,27 @@
         android:backgroundTint="@color/black"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/uber"
         android:text="Seleccionar Imagen" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/baseline_image_24"
+        android:hint="Nombre de la Imagen"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_file_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
             android:layout_marginTop="75dp"
-            android:layout_centerHorizontal="true"
-            android:hint="Nombre de la Imagen" />
+            android:fontFamily="@font/uber"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,13 +56,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="180dp" >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtNombreUsuario"
             android:layout_width="match_parent"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
             android:hint="Nombre de usuario"
             android:layout_height="wrap_content"
             android:layout_below="@id/image_view"
@@ -73,6 +78,9 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
+        app:startIconDrawable="@drawable/baseline_phone_24"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="250dp" >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -80,8 +88,6 @@
             android:layout_below="@id/image_view"
             android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
             android:hint="Teléfono"
             android:layout_height="wrap_content"
             android:textSize="18sp" />
@@ -95,6 +101,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
         android:layout_marginStart="20dp"
+        android:fontFamily="@font/uber"
         android:text="Cambiar datos" />
 
     <Button
@@ -105,6 +112,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
         android:layout_marginStart="250dp"
+        android:fontFamily="@font/uber"
         android:text="Subir imagen" />
 
     <ProgressBar
