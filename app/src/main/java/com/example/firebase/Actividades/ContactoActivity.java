@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class ContactoActivity extends AppCompatActivity {
 
     TextInputEditText nombre, apellido, correo, idBuscar;
-    Button btnBuscar, btnAgregar, btnActualizar, btnEliminar, btnLista, btnVerPerfil;
+    Button btnBuscar, btnAgregar, btnActualizar, btnEliminar, btnLista, btnVerPerfil, btnMqtt;
     FirebaseDatabase database;
     DatabaseReference referencia;
 
@@ -46,6 +46,7 @@ public class ContactoActivity extends AppCompatActivity {
         btnEliminar = findViewById(R.id.btnEliminar);
         btnLista = findViewById(R.id.btnLista);
         btnVerPerfil = findViewById(R.id.btnPerfil);
+        btnMqtt = findViewById(R.id.btnMQTTCONEXION);
 
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,6 +205,14 @@ public class ContactoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ContactoActivity.this, PerfilActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMqtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ContactoActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
